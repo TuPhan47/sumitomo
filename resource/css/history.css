@@ -300,13 +300,21 @@ img{
 }
 .box-media__content{
     padding-right: 8px;
-    width: 50%;
+    /* width: 50%; */
     box-sizing: border-box;
 }
 .box-media__img{
     padding-left: 8px;
     width: 50%;
     box-sizing: border-box;
+}
+.box-media--second .box-media__content{
+    padding-right: 18px;
+    width: 49.1%;
+}
+.box-media--second .box-media__img{
+    padding-left: 18px;
+    width: 50.9%;
 }
 
 /* box-article */

@@ -26,12 +26,14 @@ $(".closeModal").on('click', function(e) {
     });
 });
 
-$(".box-modal").on('click', function(e) {
-    $('[id^="modal"]').fadeOut(500, function(){
-        setTimeout(function(){
-            $('html').removeClass('modal-lock');
-        },600)
-    });
+$(window).click(function(event){
+    if ($(event.target).is('.box-modal__wrp')) {
+        $('[id^="modal"]').fadeOut(500, function(){
+            setTimeout(function(){
+                $('html').removeClass('modal-lock');
+            },600)
+        });
+    }
 });
 
 function adjustModalSize(){
